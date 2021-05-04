@@ -1,0 +1,251 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+/* Reset Style */
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: black;
+}
+
+/*--- Href Styles --*/
+
+.logo {
+  color: #222;
+  letter-spacing: 5px;
+}
+
+.logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+/*--- Navigation Styles --*/
+
+.navbar{
+  padding: 10px;
+}
+
+.navbar-nav li{
+  padding-right: 14px;
+}
+
+/*--- Bootstrap Carousel Image Styles --*/
+
+.carousel-inner img{
+  width: 100%;
+  height: 100%;
+}
+.carousel-caption {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.carousel-caption h1{
+  font-size: 500%;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 15px #000;
+}
+.carousel-caption h3{
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
+}
+.carousel-caption .btn {
+  font-size: 150%;
+  padding: 10px 20px;
+}
+.carousel-caption .btn > a:hover {
+  text-decoration: none;
+  color: black;
+}
+.carousel-caption a{
+  color:white;
+}
+
+/*--- Welcome Section Style --*/
+
+.welcome {
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
+}
+
+/*--- Stockists Style --*/
+.bd-example .table th, .table td { 
+     border-top: none !important; 
+ }
+
+.clear {
+  font-weight:normal;
+}
+
+.table {
+    table-layout: fixed;
+}
+
+.stockists hr {
+  border-top: 2px solid #b4b4b4;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.stockists a {
+  color: #222;
+}
+
+/*--- About Section Style --*/
+
+.container-size {
+  width: 50%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.about .display-4 {
+  font-weight: bold;
+}
+
+.about img{
+  width: inherit;
+  margin: 0 auto;
+  padding-bottom: 1em;
+}
+
+.about p{
+  text-align: left;
+}
+
+.about a{
+  text-decoration: underline;
+  color: #222;
+}
+
+.about a:hover{
+  color: green;
+}
+
+.about h2 {
+  text-align: left;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding-top: 5px;
+}
+
+.about li, ul {
+  list-style: square;
+  padding-left: 1.1em;
+  text-align: left;
+  font-size: 110%;
+}
+
+/*--- Social Media Image Styles --*/
+
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook{
+  color: #3b5998;
+}
+.fa-instagram{
+  color: #517fa4;
+}
+.fa-instagram:hover,
+.fa-facebook:hover,
+.fa-twitter:hover{
+  color:#d5d5d5;
+}
+
+/*--- Footer Styles --*/
+
+footer{
+  background-color: #3f3f3f;
+  color: #d5d5d5;
+  padding-top: 2rem;
+}
+footer a{
+  color: #d5d5d5;
+}
+footer a:hover{
+  color: grey;
+  text-decoration: none;
+}
+hr.light{
+  border-top: 1px solid #d5d5d5;
+  width: 50%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+hr.light-100{
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+  .container-size {
+    width: 80%;
+  }
+  .social a {
+    font-size: 4em;
+    padding: 2rem;
+  }
+}
+@media (max-width: 768px) {
+  .container-size {
+    width: 90%;
+  }
+  .carousel-caption {
+    top: 45%;
+  }
+  .carousel-caption h1{
+    font-size: 350%;
+  }
+  .carousel-caption h3{
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: .2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a {
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+}
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
