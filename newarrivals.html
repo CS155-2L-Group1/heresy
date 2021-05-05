@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<!--
-    Heresy About Us Overview Page
+    <!--
+    Heresy New Arrivals Page
 
-    Filename: aboutUsOverview.html
+    Filename: newarrivals.html
     -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Overview - HERESY</title>
+	<title>New Arrivals - HERESY</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
 	<link href="style.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"> 
 </head>
 <body>
 
@@ -34,7 +36,7 @@
                     <a class="nav-link" href="onSale.html">ON SALE</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="newarrivals.html">NEW ARRIVALS</a>
+                    <a class="nav-link active" href="newarrivals.html">NEW ARRIVALS</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="stockists.html">STOCKISTS</a>
@@ -43,7 +45,7 @@
                     <a class="nav-link" href="lookbook.html">LOOKBOOK</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle active" href="aboutUs.html" role="button" id="navbarDropdown" data-toggle="dropdown">ABOUT US</a>
+                    <a class="nav-link dropdown-toggle" href="aboutUs.html" role="button" id="navbarDropdown" data-toggle="dropdown">ABOUT US</a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="aboutUsOverview.html">OVERVIEW</a>
                         <div class="dropdown-divider"></div>
@@ -63,25 +65,52 @@
     </div>
 </nav>
 
-<!--- About Us Section -->
-<div class="container-fluid padding">
-<div class="row about container-size text-center">
-    <div class="col-12">
-        <h1 class="display-4 logo">HERESY</h1>
+<!-- New Arrivals Section -->
+    <div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">New Arrivals</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+            <p class="lead">HERESY is a brand that produces seasonal clothing collections influenced by the research and exploration of Folklore. 
+                Check out the latest trends brought to you by HERESY.</p>
+        </div>
     </div>
-    <div class="col-12">
-        <img src="img/aboutpic1.jpg">
-        <p class="lead">HERESY is a brand that produces seasonal clothing collections influenced by the research and exploration of Folklore.</p>
-        <p class="lead">As well as clothing they make handmade art objects, produce events, program music projects, and print small-press publications.</p>
-        <h2>ETHICAL STUFF</h2>
-        <p class="lead">Firstly, we would like to express that we are not trying to jump on a band-wagon by projecting this information. We understand that consumer consciousness is becoming more widespread, this is obviously fantastic news, but we want to make clear that this isn't a way for us to exploit a current trend or an attempt to add value to our product.</p>
-        <p class="lead">We have been operating in an ethically conscious manner since we started the company in 2012, and for us it was just something that went without saying. Some other brands, commendably, make this issue part of their brand's identity, but HERESY's focus has always been on folklore. However it is fundamental that the framework under which we operate our business is fair and ethical, and for this reason we would like to share information about where our product comes from, and how it is made.</p>
-        <p class="lead">Whenever at all possible our more technical pieces are made in England, by a not-for-profit factory in very small runs. The factory we use is run by industry professionals that have left big businesses in order to help rejuvenate an area of the UK with a previously prosperous textile industry, and provide training and opportunities for the community, with special focus on its youth. We have a good relationship with this factory, and as well as knowing that our investment in them is going towards growing a sustainable community industry, they produce some of the highest quality product we have encountered.</p>
-        <p class="lead">The other main area of our product is t-shirts. While many companies use ready-made 'blanks' which they then print graphics on, all our jersey products are custom-made with our own shape and fit. They are pre-washed to prevent any shrinkage, and are made with the highest quality heavy-weight jersey we have come across. It took a lot of work and time to develop our t-shirts, but we are now very proud of them, and believe that they could give any other shirt a run for their money.</p>
-        <p class="lead">All our t-shirts are made in Portugal to an exceptional standard, in a progressive, high welfare factory of which we have personally spent time at. Portugal is known for its textiles, especially its high quality jersey manufacturing, and our factory is part of a high functioning, responsible and sustainable local textiles industry.</p>
-        <p class="lead">We also produce product in Asia, currently we work with a single factory of which we have a close relationship with, and which has been surveyed to ensure that working practice meets with our standards. The factory specialises in small run production, so the team is small and the level of workmanship is high. What we pay for our product is in alignment with the product we produce in Europe, and therefore we demand a quality that is similarly high.</p>
     </div>
-</div>
+<div class="container-fluid">
+    <div class="row mt-4">
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback1.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] LURKER CAP || €50.00">
+                <img src="img/new1.jpg" width="100%">
+            </a>
+        </div>
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback2.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] MUMMERS MASK || €500.00">
+                <img src="img/new2.jpg" width="100%">
+            </a>
+        </div>
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback3.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] TRIP BELT || €35.00">
+                <img src="img/new3.jpg" width="100%">
+            </a>
+        </div>
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback4.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] HENGE SOCKS || €30.00">
+                <img src="img/new4.jpg" width="100%">
+            </a>
+        </div>
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback5.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] SPRITES SHIRT || €45.00">
+                <img src="img/new5.jpg" width="100%">
+            </a>
+        </div>
+        <div class ="item col-sm-6 col-md-4 mb-3">
+            <a href="img/newback6.jpg" class="fancybox" data-fancybox="gallery1" data-caption="[NEW!] BODY HARVEST BLANKET || 260.00">
+                <img src="img/new6.jpg" width="100%">
+            </a>
+        </div>
+    </div>
 </div>
 
 <!--- Footer -->

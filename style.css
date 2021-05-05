@@ -121,7 +121,7 @@ html, body {
 .about img{
   width: inherit;
   margin: 0 auto;
-  padding-bottom: 1em;
+  padding-bottom: 2em;
 }
 
 .about p{
@@ -129,7 +129,6 @@ html, body {
 }
 
 .about a{
-  text-decoration: underline;
   color: #222;
 }
 
@@ -149,6 +148,31 @@ html, body {
   padding-left: 1.1em;
   text-align: left;
   font-size: 110%;
+}
+
+/*--- Lookbook Style --*/
+
+.lookbook-size {
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+
+.lookbook-text-size {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 2rem;
+}
+
+.lookbook-text-size hr {
+  margin: 2em auto;
+  width: 100%;
+}
+
+.text-together {
+  font-size: 130%;
+  margin: 0;
+  padding: 0;
 }
 
 /*--- REGISTER Styles --*/
@@ -307,6 +331,74 @@ html, body {
   filter: brightness(80%);
 }
 
+/*-- Contact Us Page Styles --*/
+
+.contact-section{
+  padding: 40px 0;
+  background: #fff;
+}
+.contact-section h1{
+  text-align: center;
+}
+.border{
+  width: 50%;
+  height: 3px;
+  background: #333;
+  margin: 40px auto;
+}
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+  overflow: hidden;
+}
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 1px solid #333;
+  padding: 10px 30px;
+  outline: none;
+  color: #000;
+  transition: 0.5s;
+}
+.contact-form-text:focus{
+  box-shadow: 0 0 3px 1.5px #C6B19C;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 120px;
+}
+.contact-form-btn{
+  float: right;
+  bottom: 0;
+  padding: 10px 50px;
+  cursor: pointer;
+  border-radius: 2.5px;
+  transition: 0.5s;
+  background: transparent;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.contact-form-btn:hover{
+  background: #fff;
+  color: #000;
+}
+
+/*--- Image Map Styles ---*/
+
+.iMap{
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.image-map-section > h1 {
+  text-align: center;
+}
+
 /*--- Footer Styles --*/
 
 footer{
@@ -337,15 +429,27 @@ hr.light-100{
 /*---Media Queries --*/
 @media (max-width: 992px) {
   .container-size {
-    width: 80%;
+    width: 70%;
   }
   .social a {
     font-size: 4em;
     padding: 2rem;
   }
+  .lookbook-size {
+    width: 70%;
+  }
+  .lookbook-text-size {
+    width: 70%;
+  }
 }
 @media (max-width: 768px) {
   .container-size {
+    width: 90%;
+  }
+  .lookbook-size {
+    width: 90%;
+  }
+  .lookbook-text-size {
     width: 90%;
   }
   .carousel-caption {
